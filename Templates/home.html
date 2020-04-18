@@ -1,0 +1,29 @@
+<body>
+
+<h1>Word Counter Application Django Test</h1>
+
+<form action = "{% url 'count' %}">
+  <textarea cols = "75" rows = "10" name = "UserText"></textarea>
+  <br />
+  <br />
+  <input type="submit" value="Count Me!" />
+  <br />
+  <br />
+  <a href = "{% url 'about' %}"> Learn about me!</a>
+</form>
+</body>
+<style>
+  input{
+    background-color: #3333ff;
+    border-radius: 15px;
+  }
+  input:hover{
+    background-color:#0000e6;
+  }
+  body{
+    background-color:#7474FF;
+  }
+  textarea{
+    background-color:#9B9BFF;
+  }
+</style>

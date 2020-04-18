@@ -1,0 +1,18 @@
+<body>
+<h1> There are {{ count }} words in your text</h1>
+<br />
+<a href="{% url 'home' %}">Restart</a>
+<h2>Your text:</h2>
+<h4>{{ UserText }}</h4>
+<br />
+<h1>Word Count:</h1>
+
+{%for word, wordTotal in WordCount%}
+<h3>{{ word }} - {{ wordTotal }}</h3>
+{% endfor %}
+</body>
+<style>
+body{
+  background-color:#7474FF;
+}
+</style>
